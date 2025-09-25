@@ -15,11 +15,18 @@ const geist = Geist({
 });
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{ children: React.ReactNode }>) {
-	return (
-		<html lang="en" className={`${geist.variable}`}>
-			<body>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${geist.variable}`}>
+		<main className= "text-white">
+        	<div className="w-full"> First Layout</div>
+        {children}
+		</main>
+      </body>
+    </html>
+  );
 }
+
+//<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white"></main>

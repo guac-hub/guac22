@@ -16,6 +16,9 @@ export default function HomePage() {
       ))
     }
     </div>
+    <Link href="layer02">
+      2nd page
+    </Link>
 		</main>
 	);
 }
